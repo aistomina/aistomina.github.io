@@ -6,11 +6,20 @@ body {
     height: 100%;
     background-color: #fff;
 }
+a {
+    text-decoration: none;
+    color: #324621;
+}
+a:hover {
+    color:#6b844e;
+}
+
 .page {
     width: 1024px;
     height: 100%;
     margin: 0 auto;
-    background-color: #f0e9d9;
+    /*background-color: #f0e9d9;*/
+    background-image: url("img/wood_web.jpg");
 }
 .logo {
     background-color: #3d4224;
@@ -26,7 +35,7 @@ body {
 .top_logo > a {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    color:#edf7f1;
+    color:#f0e9d9;
     font-size: 38pt;
 }
 .bottom_logo {
@@ -37,12 +46,12 @@ body {
 .bottom_logo > a{
     font-family: 'Satisfy', cursive;
     text-decoration: none;
-    color:#edf7f1;
+    color:#f0e9d9;
     font-size: 21pt;
 
 }
 .nav {
-    background-color: #915935;
+    background-color: #8c423b;
     height: 39px;
 }
 .nav-menu {
@@ -66,10 +75,11 @@ body {
     background-color: #f0e9d9;
 }
 .main {
-    width: 700px;
+    width: 720px;
     float: left;
     height: 100%;
     padding: 20px 0 0 0;
+    margin-right: -20px;
 }
 .sidebar {
     width: 324px;
@@ -81,22 +91,24 @@ body {
     margin: 0 20px;
 }
 .panel-head {
-    background-color: #915935;
+    background-color: #8c423b;
     color: #f8f5ec;
     padding: 10px 20px;
     border-radius: 5px 5px 0 0;
 }
 .panel-content {
     padding: 1px 20px 20px 20px;
-    background-color: #fff;
+    background-color: #f0e9d9;
     border-radius: 0 0 5px 5px;
+    line-height: 1.5em;
 
 }
+
 img{
     border-radius: 5px 5px 5px 5px;
 }
 .img_steps_width {
-    width: 620px;
+    width: 640px;
 }
 ul {
     list-style-type: none;
