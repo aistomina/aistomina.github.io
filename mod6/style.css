@@ -89,6 +89,7 @@ a:hover {
 }
 .panel {
     margin: 0 20px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
 }
 .panel-head {
     background-color: #8c423b;
