@@ -1,0 +1,193 @@
+.inner {
+    margin: 0 auto;
+    width: 700px;
+    padding-top: 10px;
+}
+.box1 {
+    height: 420px;
+    background-color: #26394c;
+}
+.sea1 {
+    font-family: 'Sail', cursive;
+    color: #dce0e4;
+    font-size: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+.sea2 {
+    font-family: 'Lora', serif;
+    color: #dce0e4;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -45px;
+    text-align: center;
+}
+
+.box2 {
+    height: 360px;
+    background-color: #576a4a;
+
+}
+.life1 {
+    font-family: 'Euphoria Script', cursive;
+    color: #fffada;
+    font-size: 75px;
+    margin: 40px 0 -40px 0;
+}
+.life2 {
+    font-family: 'Lato', sans-serif;
+    color: #fffada;
+    font-size: 40px;
+    margin: 15px 0 0 60px;
+}
+.life3 {
+    font-family: 'Euphoria Script', cursive;
+    color: #fffada;
+    font-size: 80px;
+
+    margin: -55px 0 0 157px;
+
+}
+.box3 {
+    height: 450px;
+    background-color: #b2d7b6;
+}
+
+.wonder1 {
+    color: #492714;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 60px 0 -30px 0;
+    text-align: center;
+}
+.wonder2 {
+    color: #fdfbef;
+    font-size: 64px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0 -34px 0;
+    text-align: center;
+}
+.wonder3 {
+    color: #fd5611;
+    font-size: 83px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 -40px 0;
+    text-align: center;
+}
+.wonder4 {
+    color: #492714;
+    font-size:83px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 -30px 0;
+    text-align: center;
+}
+.box4 {
+    height: 400px;
+    background-color: #f2f2f2;
+}
+.do1 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 100px;
+    text-align: center;
+}
+.do2 {
+    color: #4d4d4d;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    font-size: 45px;
+    margin-top: -50px;
+    text-align: center;
+}
+.box5 {
+    height: 400px;
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    /* box5 starry styling by http://lea.verou.me/css3patterns/#starry-night*/
+
+}
+
+.destiny1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 75px;
+    color: #fff;
+    margin-top: 40px;
+}
+.box6 {
+    background-color: #fbc7b2;
+    height: 400px;
+}
+.artist1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 75px;
+    color: #543449;
+    text-align: center;
+    margin: 70px 0 5px 0;
+}
+.artist2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 55px;
+    color: #543449;
+    text-align: center;
+    margin-top: -10px;
+}
+.box7 {
+    height: 450px;
+    background-color: #333;
+}
+.world1{
+    color:#e4eaf2;
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 100px 0 -150px 0;
+    text-transform: uppercase;
+}
+.world2{
+    color:#ffb200;
+    font-size: 115px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.world3{
+    color:#e4eaf2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: -143px;
+    text-transform: uppercase;
+}
+.box8 {
+    height: 450px;
+    background-color: #bf5349;
+}
+.trap1{
+    color:#e4eaf2;
+    font-size: 78px;
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: 700;
+    margin-bottom: -110px;
+}
+.trap2{
+    color:#e4eaf2;
+    font-size: 85px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
