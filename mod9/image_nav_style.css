@@ -1,0 +1,90 @@
+html {
+    background: #fceee6 url("img/background.png") left bottom no-repeat fixed;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+            background-size: cover;
+}
+
+p {
+    font-family: 'Great Vibes', cursive;
+    color: #8d6077;
+    font-size: 90px;
+    margin: 35px;
+}
+.logo {
+    padding: 0 0 0 15px;
+    width: 500px;
+    height: 120px;
+    border: 1px solid red;
+}
+
+a.rollover {
+    display: inline-block;
+    width: 242px;
+    height: 100px;
+    text-decoration: none;
+    margin: 30px;
+    background: url('img/products.png') 0px 0px;
+}
+a.rollover:hover {
+    background-position: 0px -100px;
+}
+a.rollover:active {
+    background-position: 0px -200px;
+}
+a.rollover1 {
+    display: inline-block;
+    width: 242px;
+    height: 100px;
+    text-decoration: none;
+    margin: 30px;
+    background: url('img/events.png') 0px 0px;
+}
+a.rollover1:hover {
+    background-position: 0px -100px;
+}
+a.rollover1:active {
+    background-position: 0px -200px;
+}
+a.rollover2 {
+    display: inline-block;
+    width: 242px;
+    height: 100px;
+    text-decoration: none;
+    margin: 30px;
+    background: url('img/about.png') 0px 0px;
+}
+a.rollover2:hover {
+    background-position: 0px -100px;
+}
+a.rollover2:active {
+    background-position: 0px -200px;
+}
+a.rollover3 {
+    display: inline-block;
+    width: 242px;
+    height: 100px;
+    text-decoration: none;
+    margin: 30px;
+    background: url('img/contact.png') 0px 0px;
+}
+a.rollover3:hover {
+    background-position: 0px -100px;
+}
+a.rollover3:active {
+    background-position: 0px -200px;
+}
+a.rollover4 {
+    display: inline-block;
+    width: 242px;
+    height: 100px;
+    text-decoration: none;
+    margin: 30px;
+    background: url('img/blog.png') 0px 0px;
+}
+a.rollover4:hover {
+    background-position: 0px -100px;
+}
+a.rollover4:active {
+    background-position: 0px -200px;
+}
