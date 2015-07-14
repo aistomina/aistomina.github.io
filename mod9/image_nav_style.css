@@ -5,17 +5,18 @@ html {
             background-size: cover;
 }
 
-p {
+.logo-text {
     font-family: 'Great Vibes', cursive;
-    color: #8d6077;
+    color: #fff;
     font-size: 90px;
-    margin: 35px;
+    padding: 28px 0 0 25px;
 }
 .logo {
     padding: 0 0 0 15px;
-    width: 500px;
-    height: 120px;
-    border: 1px solid red;
+    height: 150px;
+    width: auto;
+    background: #8d6077 url('img/tile.png') left bottom repeat-x;
+
 }
 
 a.rollover {
@@ -24,13 +25,14 @@ a.rollover {
     height: 100px;
     text-decoration: none;
     margin: 30px;
-    background: url('img/products.png') 0px 0px;
+    background: url('img/products.png') 0 0;
 }
 a.rollover:hover {
-    background-position: 0px -100px;
+    background-position: 0 -100px;
 }
+
 a.rollover:active {
-    background-position: 0px -200px;
+    background-position: 0 -200px;
 }
 a.rollover1 {
     display: inline-block;
@@ -38,13 +40,13 @@ a.rollover1 {
     height: 100px;
     text-decoration: none;
     margin: 30px;
-    background: url('img/events.png') 0px 0px;
+    background: url('img/events.png') 0 0;
 }
 a.rollover1:hover {
-    background-position: 0px -100px;
+    background-position: 0 -100px;
 }
 a.rollover1:active {
-    background-position: 0px -200px;
+    background-position: 0 -200px;
 }
 a.rollover2 {
     display: inline-block;
@@ -52,13 +54,13 @@ a.rollover2 {
     height: 100px;
     text-decoration: none;
     margin: 30px;
-    background: url('img/about.png') 0px 0px;
+    background: url('img/about.png') 0 0;
 }
 a.rollover2:hover {
-    background-position: 0px -100px;
+    background-position: 0 -100px;
 }
 a.rollover2:active {
-    background-position: 0px -200px;
+    background-position: 0 -200px;
 }
 a.rollover3 {
     display: inline-block;
@@ -66,13 +68,13 @@ a.rollover3 {
     height: 100px;
     text-decoration: none;
     margin: 30px;
-    background: url('img/contact.png') 0px 0px;
+    background: url('img/contact.png') 0 0;
 }
 a.rollover3:hover {
-    background-position: 0px -100px;
+    background-position: 0 -100px;
 }
 a.rollover3:active {
-    background-position: 0px -200px;
+    background-position: 0 -200px;
 }
 a.rollover4 {
     display: inline-block;
@@ -80,11 +82,47 @@ a.rollover4 {
     height: 100px;
     text-decoration: none;
     margin: 30px;
-    background: url('img/blog.png') 0px 0px;
+    background: url('img/blog.png') 0 0;
 }
 a.rollover4:hover {
-    background-position: 0px -100px;
+    background-position: 0 -100px;
 }
 a.rollover4:active {
-    background-position: 0px -200px;
+    background-position: 0 -200px;
+}
+a.rollover5 {
+    display: inline-block;
+    width: 242px;
+    height: 100px;
+    text-decoration: none;
+    margin: 30px;
+    background: url('img/fancy.png') 0 0;
+    animation: rolloff;
+    animation-duration: 0.2s;
+}
+a.rollover5:hover {
+    animation: rllvr;
+    animation-duration: 0.2s;
+    background-position: 0 -100px;
+}
+
+@keyframes rllvr {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -100px;
+    }
+}
+
+@keyframes rolloff {
+    from {
+        background-position: 0 -100px;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+a.rollover5:active {
+    background-position: 0 -200px;
 }
