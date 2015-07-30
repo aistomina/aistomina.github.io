@@ -50,7 +50,8 @@ a:hover {
     padding: 15px 25px;
 }
 .logo {
-    background-color: rgba(132, 64, 44, 1);
+    /*background-color: rgba(132, 64, 44, 1);*/
+    background-image: url("img/orange_part.jpg");
     color: #edf7f1;
     padding: 15px 25px;
     height: 167px;
@@ -288,7 +289,8 @@ textarea {
     height: 40px;
     text-align: center;
     margin: 20px;
-    background-color: rgba(132, 64, 44, 1);
+    /*background-color: rgba(132, 64, 44, 1);*/
+    background-image: url("img/submit_button.jpg");
     color:white;
     transition: all 0.15s linear;
 }
