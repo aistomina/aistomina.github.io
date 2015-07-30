@@ -8,7 +8,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 a:hover {
     color:#bbbdc0;
@@ -143,6 +143,7 @@ figure:hover > a > img {
     box-shadow: 10px 7px 5px rgba(0,0,0,0.2);
     transition: all 0.15s linear;
     transform: rotate(1deg) scale(1.02, 1.02);
+    -webkit-transform: rotate(1deg) scale(1.02, 1.02);
 }
 .first {
     float: left;
