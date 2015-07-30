@@ -3,7 +3,7 @@ html {
 }
 body {
     font-family: Verdana, sans-serif;
-    
+
     background-color: #fff;
 }
 a {
@@ -32,7 +32,7 @@ a:hover {
     width: 1024px;
     height: 768px;
     margin: 0 auto;
-    background-image: url("img/dark.jpg");
+    background-image: url("img/dark_effect.jpg");
     background-repeat: no-repeat;
     position: relative;
 }
@@ -48,7 +48,7 @@ a:hover {
     padding: 15px 25px;
 }
 .logo {
-    background-color: #6c3232;
+    background-color: rgba(132, 64, 44, 1);
     color: #edf7f1;
     padding: 15px 25px;
     height: 167px;
@@ -134,14 +134,27 @@ figure {
     display: inline-block;
     margin: 20px 18px;
 }
+figure > a > img {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    transition: all 0.1s linear;
+}
+figure:hover > a > img {
+    opacity: 0.85;
+    box-shadow: 10px 7px 5px rgba(0,0,0,0.2);
+    transition: all 0.15s linear;
+    transform: rotate(1deg) scale(1.02, 1.02);
+}
 .first {
     float: left;
     margin: 20px 20px 10px 85px;
+
+
 }
+
 figcaption {
     font-family: 'Lato', sans-serif;
     text-align: center;
-    color: #231f20;
+    color: #fff;
     font-size: 18px;
     padding-top: 5px;
 }
@@ -183,7 +196,7 @@ figcaption {
 
 }
 .text-block-item {
-
+    text-align: center;
     line-height: 1.5em;
     color: #fff;
     font-size: 20px;
@@ -214,7 +227,7 @@ figcaption {
     display: inline-block;
     width: 100px;
     text-align: center;
-    color: #6c3232;
+    color: #84402c;
 }
 form {
     background-color: transparent;
@@ -254,9 +267,16 @@ textarea {
     height: 40px;
     text-align: center;
     margin: 20px;
-    background-color: #6c3232;
+    background-color: rgba(132, 64, 44, 1);
     color:white;
+    transition: all 0.15s linear;
 }
+#submit:hover {
+    transition: all 0.1s linear;
+    opacity: 0.8;
+    box-shadow: 8px 8px 5px rgba(0,0,0,0.2);
+}
+
 input {
     float: right;
     clear: both;
@@ -294,4 +314,39 @@ input:focus,textarea:focus {
     width: 300px;
     margin-left: 30px;
 
+}
+.carousel {
+    position: relative;
+}
+.left_arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105px;
+    height: 622px;
+}
+.item_middle {
+    width: 800px;
+    margin: 0 auto;
+}
+.right_arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 105px;
+    height: 622px;
+}
+
+.left_arrow > a > img,.right_arrow > a > img {
+    position: absolute;
+    top: 250px;
+}
+.left_arrow > a > img:hover,.right_arrow > a > img:hover {
+    opacity: 0.7;
+}
+.left_arrow > a > img {
+    right: 30px;
+}
+.right_arrow > a > img {
+    left: 30px;
 }
