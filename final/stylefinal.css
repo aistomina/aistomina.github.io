@@ -70,6 +70,10 @@ a:hover {
     list-style: none;
     margin-top: 0;
     padding-right: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 .nav-menu > li, .nav-menu > li > a {
     display: inline-block;
@@ -216,6 +220,7 @@ figcaption {
     margin: 0 120px 0 50px;
     height: 475px;
 
+
 }
 .text-block-item {
     text-align: center;
@@ -235,7 +240,7 @@ figcaption {
 
 .footer {
     width: 418px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 .footer-background {
     background-color: #e6e7e8;
@@ -318,10 +323,11 @@ input:focus,textarea:focus {
     position: absolute;
     top: 300px;
     right: 230px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     color: #f1f1f2;
     font-size: 35px;
+    letter-spacing: 1px;
 }
 .form-container {
     display: inline-block;
