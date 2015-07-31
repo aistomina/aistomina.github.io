@@ -130,7 +130,9 @@ ul {
 }
 
 .featured {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
     text-align: center;
     color: #f1f1f2;
     text-transform: uppercase;
@@ -190,13 +192,17 @@ figcaption {
     font-size: 18px;
 }
 .page-header {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
     color: #f1f1f2;
     padding: 30px 0 20px 40px;
     font-size: 30px;
 }
 .page-header-item {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
     color: #f1f1f2;
     padding: 30px 0 20px 0;
     font-size: 30px;
@@ -241,6 +247,8 @@ figcaption {
 .footer {
     width: 418px;
     margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
 }
 .footer-background {
     background-color: #e6e7e8;
@@ -297,6 +305,9 @@ textarea {
     /*background-color: rgba(132, 64, 44, 1);*/
     background-image: url("img/submit_button.jpg");
     color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
     transition: all 0.15s linear;
 }
 #submit:hover {
