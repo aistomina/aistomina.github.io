@@ -62,6 +62,10 @@ a:hover {
     position: absolute;
     left: 35px;
 }
+.logotype > a {
+    position: absolute;
+    left: 35px;
+}
 
 .nav-menu {
     position: absolute;
@@ -235,7 +239,9 @@ figcaption {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     width: 500px;
+    height: 100px;
     margin: 0 auto;
+
 }
 
 
@@ -392,4 +398,7 @@ input:focus,textarea:focus {
 }
 .social {
  margin-top: 25px;
+}
+.page-height {
+ height: 700px;
 }
