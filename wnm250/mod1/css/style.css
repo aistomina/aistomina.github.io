@@ -1,0 +1,214 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    background-image: url("../img/wild_oliva.png");
+    /*texture credits subtlepatterns.com*/
+    height: 100%;
+}
+
+
+.wrap {
+    min-height: 100%;
+}
+section {
+    overflow: auto;
+    padding-bottom: 95px;
+
+}
+.footer-wrap {
+    width: 100%;
+    background-color: #fff;
+    margin: -95px auto 0 auto;
+    clear: both;
+    background-image: url("../img/zwartevilt.png")
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #f1f1f2;
+}
+a:hover {
+    color:#bbbdc0;
+}
+
+
+.page-site {
+    width: 1024px;
+
+    margin: 0 auto;
+    background-image: url("img/dark_brick_wall.png");
+    /*texture credits subtlepatterns.com*/
+    /*padding-bottom: 100px;*/
+}
+
+
+.logotype{
+    margin-left: 20px;
+    font-family: Oswald, sans-serif;
+    font-size: 75px;
+}
+.logotype-sub {
+    font-family: Oswald, sans-serif;
+    font-size: 40px;
+    margin-top: -14px;
+    margin-left: 22px;
+}
+.logo {
+    /*background-color: #ffffff;*/
+    background-image: url("../img/zwartevilt.png");
+    width: 1024px;
+    margin: 0 auto;
+    color: #edf7f1;
+    height: 167px;
+    position: relative;
+}
+
+.logo > a {
+    position: absolute;
+    left: 35px;
+}
+.logo-wrap {
+    width: 100%;
+    /*background-color: #fff;*/
+    background-image: url("../img/zwartevilt.png")
+}
+.logotype > a {
+    position: absolute;
+    left: 35px;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 65px;
+    right: 35px;
+    list-style: none;
+    margin-top: 0;
+    padding-right: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.nav-menu > li, .nav-menu > li > a {
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+}
+.nav-menu > li > a {
+    color: #e6e7e8;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.nav-menu > li > a:hover {
+    color: #000;
+    background-color: #e6e7e8;
+}
+
+
+img{
+    border-radius: 5px 5px 5px 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+figure {
+    display: inline-block;
+    margin: 20px 18px;
+}
+figure > a > img {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    transition: all 0.1s linear;
+}
+figure:hover > a > img {
+    opacity: 0.85;
+    box-shadow: 10px 7px 5px rgba(0,0,0,0.2);
+    transition: all 0.15s linear;
+    transform: rotate(1deg) scale(1.02, 1.02);
+    -webkit-transform: rotate(1deg) scale(1.02, 1.02);
+}
+
+.first {
+    float: left;
+    margin: 20px 20px 10px 85px;
+
+}
+
+figcaption {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #f1f1f2;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.page-header {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    color: #f1f1f2;
+    padding: 30px 0 20px 40px;
+    font-size: 30px;
+}
+.page-header-item {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    color: #f1f1f2;
+    padding: 30px 0 20px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-block {
+    float: right;
+    line-height: 1.5em;
+    color: #f1f1f2;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    width: 400px;
+    margin: 0 120px 0 50px;
+    height: 475px;
+}
+.text-block-item {
+    text-align: center;
+    line-height: 1.5em;
+    color: #f1f1f2;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+.footer {
+    width: 418px;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+}
+.footer-background {
+    margin: 0 auto;
+    width: 1024px;
+    height: 60px;
+    padding-top: 35px;
+    background-image: url("../img/zwartevilt.png")
+
+}
+.footer > li, .footer > li > a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: #e6e7e8;
+}
+
+
+.page-height {
+    height: 700px;
+}
