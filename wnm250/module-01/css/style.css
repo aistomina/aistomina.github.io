@@ -47,16 +47,24 @@ a:hover {
 }
 
 
-.logotype{
+.logotype {
     margin-left: 20px;
     font-family: Oswald, sans-serif;
-    font-size: 75px;
+    font-size: 65px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 35px;
+    padding-top: 15px;
+    letter-spacing: 1px;
 }
 .logotype-sub {
     font-family: Oswald, sans-serif;
     font-size: 40px;
     margin-top: -14px;
     margin-left: 22px;
+    position: absolute;
+    left: 35px;
+    bottom: 20px;
 }
 .logo {
     /*background-color: #ffffff;*/
@@ -76,10 +84,6 @@ a:hover {
     width: 100%;
     /*background-color: #fff;*/
     background-image: url("../img/zwartevilt.png")
-}
-.logotype > a {
-    position: absolute;
-    left: 35px;
 }
 
 .nav-menu {
@@ -166,14 +170,15 @@ figcaption {
 }
 
 .text-block {
-    float: right;
+
     line-height: 1.5em;
     color: #f1f1f2;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    width: 400px;
-    margin: 0 120px 0 50px;
-    height: 475px;
+    width: 600px;
+    margin: 0px auto;
+    padding: 20px 0 20px 0;
+
 }
 .text-block-item {
     text-align: center;
@@ -211,4 +216,13 @@ figcaption {
 
 .page-height {
     height: 700px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    background-image: linear-gradient(to right, #333, #ccc, #333);
+    width: 900px;
+    margin: 30px auto;
 }
