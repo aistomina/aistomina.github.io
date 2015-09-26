@@ -305,17 +305,3 @@ hr {
     width: 900px;
     margin: 30px auto;
 }
-
-@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
-    html, body {
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-}
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    html, body {
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
-}
