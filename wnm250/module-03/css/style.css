@@ -18,6 +18,7 @@ body {
     background-image: url("../img/wild_oliva.png");
     /*texture credits subtlepatterns.com*/
     height: 100%;
+    font-size: 62.5%;
 }
 
 
@@ -45,9 +46,24 @@ a:hover {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    background-image: url("../img/dark_brick_wall.png");
+
     /*texture credits subtlepatterns.com*/
     /*padding-bottom: 100px;*/
+}
+
+@media only screen and (max-width: 1037px) {
+    .page-site {
+        max-width: 680px;
+    }
+    hr {
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .page-site {
+        max-width: 351px;
+    }
+
 }
 
 
@@ -90,6 +106,9 @@ a:hover {
     /*background-color: #fff;*/
     background-image: url("../img/zwartevilt.png")
 }
+.mobile-logo {
+    display: none;
+}
 
 .nav-menu {
     position: absolute;
@@ -118,7 +137,43 @@ a:hover {
     background-color: #e6e7e8;
 }
 
+@media only screen and (max-width: 841px) {
+    .logotype-sub {
+        left: 316px;
+        bottom: 66px;
+    }
+    .nav-menu {
+        top: 105px;
+        right: initial;
+        left: 11px;
+    }
 
+}
+
+@media only screen and (max-width: 565px) {
+    .logo {
+        height: initial;
+    }
+    .logotype, .logotype-sub {
+        display: none;
+    }
+    .mobile-logo {
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Oswald', sans-serif;
+        padding-top: 15px;
+
+    }
+    .nav-menu {
+        width: 110px;
+        top: initial;
+        position: relative;
+        margin: 0 auto;
+        left: initial;
+    }
+
+}
 img{
     border-radius: 5px 5px 5px 5px;
 }
@@ -173,14 +228,13 @@ figcaption {
 
 .text-block {
     width: 100%;
-    max-width: 30em;
+    max-width: 34em;
     line-height: 1.5em;
     color: #f1f1f2;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    margin: 0px auto;
-    padding: 20px 0 20px 0;
-
+    margin: 0 auto;
+    padding: 20px 2em 20px 2em;
 }
 .text-block-item {
     text-align: center;
@@ -214,7 +268,7 @@ figcaption {
     max-width: 1024px;
     margin: 0 auto;
     height: 95px;
-    padding-top: 35px;
+    padding-top: 30px;
     background-image: url("../img/zwartevilt.png")
 
 }
@@ -223,6 +277,19 @@ figcaption {
     width: 100px;
     text-align: center;
     color: #e6e7e8;
+}
+
+@media only screen and (max-width: 440px) {
+    .footer {
+        max-width: 116px;
+    }
+    .footer-background {
+        height: 150px;
+    }
+    .footer > li {
+        padding-bottom: 5px;
+    }
+
 }
 
 
@@ -237,4 +304,18 @@ hr {
     background-image: linear-gradient(to right, #333, #ccc, #333);
     width: 900px;
     margin: 30px auto;
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+    html, body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+    html, body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
 }
