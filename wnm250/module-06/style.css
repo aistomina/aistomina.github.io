@@ -58,7 +58,7 @@ header > * {
 header > #logo {
     font-weight: 400;
     margin: 0;
-    padding: 0 0 30px 0;
+    padding: 0 0 18px 0;
     left: 60px;
     bottom: 0;
 }
@@ -81,6 +81,24 @@ header > #links > a:hover {
     border-bottom: 5px solid #000;
 }
 
+@media only screen and (max-width: 590px) {
+    header > * {
+        position: relative;
+    }
+    header {
+        height: 111px;
+    }
+    header > #logo {
+        left: 0;
+    }
+    header > #links {
+        right: 0;
+    }
+    header > #links > a {
+        margin-left: 0;
+    }
+}
+
 .wrapper {
     min-height: 100%;
 }
@@ -97,6 +115,24 @@ header > #links > a:hover {
     float: left;
     overflow: hidden;
     position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+    #gallery > li {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #gallery > li {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #gallery > li {
+        width: 100%;
+    }
 }
 
 #gallery > li > a {
@@ -182,15 +218,23 @@ footer {
 }
 .footer-nav > ul {
     margin: 0;
-    border-top: 1px solid #888;
-    border-bottom: 1px solid #888;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-footer> .footer-nav > ul >li {
+.footer-nav > ul > li {
     display: inline;
     text-align: center;
     margin: 0 1em;
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-nav > ul {
+        padding-left: 0;
+    }
+    .footer-nav > ul > li {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .about-photo {
