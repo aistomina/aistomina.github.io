@@ -26,7 +26,8 @@ body {
 }
 
 section {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding-bottom: 104px;
     max-width: 1200px;
     width: 100%;
