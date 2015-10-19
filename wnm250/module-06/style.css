@@ -25,7 +25,7 @@ body {
     font-weight: 300;
 }
 
-section {
+div.section {
     overflow-y: auto;
     overflow-x: hidden;
     padding-bottom: 104px;
