@@ -245,5 +245,9 @@ footer {
     float: left;
     clear: none;
     margin-right: 30px;
-    margin-top: 30px;
+    margin-top: 23px;
+}
+.about-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
 }
