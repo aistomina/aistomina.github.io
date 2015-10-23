@@ -91,6 +91,7 @@ header > #links > a:hover {
     }
     header > #logo {
         left: 0;
+        padding-top: 8px;
     }
     header > #links {
         right: 0;
@@ -167,8 +168,15 @@ header > #links > a:hover {
     top: 0;
     bottom: 0;
     width: 7%;
-    opacity: 0.1;
+    opacity: 0.2;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+@media only screen and (max-width: 800px) {
+  .previous,.next {
+    /* you can't hover on your phone, so buttons have to be visible */
+    opacity: 0.6;
+  }
 }
 
 .previous > div,.next > div {
