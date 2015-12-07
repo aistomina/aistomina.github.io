@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#gallery ul, footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery li, footer li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h1,h2,h3 {
+  color: #483f62;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-image: url("images/grey_@2X.png");
+    font-weight: 300;
+}
+
+.header-wrapper {
+  height: 125px;
+  width: 100%;
+  background-color: #6c659e;
+}
+
+header {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 24px;
+  color: #ffc86b;
+}
+
+header > * {
+    position: absolute;
+}
+
+header > #logo {
+  margin: 0;
+  padding: 15px 0 0 0;
+  bottom: 0;
+  height: 100%;
+}
+
+header > #logo img {
+  height: 90px;
+}
+
+header > #links {
+    font-weight: 200;
+    font-size: 0.7em;
+    right: -10px;
+    bottom: 10px;
+}
+
+header > #links > a {
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    padding: 10px;
+    margin-left: 5px;
+    display: inline-block;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+header > #links > a:hover {
+    background-color: white;
+    color: #6c659e;
+}
+
+@media only screen and (max-width: 1034px) {
+  header {
+    padding: 0 10px;
+  }
+  header > #links {
+      right: 0px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+    header > * {
+        position: relative;
+    }
+    header {
+        height: 111px;
+    }
+    header > #logo {
+        left: 0;
+    }
+    header > #links {
+        right: 0;
+    }
+    header > #links > a {
+        margin-left: 0;
+    }
+}
+
+div.section {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 104px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+div.sub-section {
+  overflow: auto;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1034px) {
+  div.section {
+    padding-bottom: 104px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.wrapper {
+    min-height: 100%;
+    padding-bottom: 30px;
+}
+
+.left-img,.right-img {
+    width: 50%;
+    clear: none;
+}
+
+.left-img {
+    float: left;
+    margin-right: 30px;
+}
+
+.right-img {
+    float: right;
+    margin-left: 30px;
+}
+
+footer {
+    margin: -105px auto 0 auto;
+    height: 150px;
+    text-decoration: none;
+    background-color: #d1cee2;
+    font-size: 14px;
+}
+
+footer, footer a {
+  color: #483f62;
+}
+
+footer h3 {
+  margin-bottom: 0.5em;
+}
+
+footer li {
+  padding-bottom: 5px;
+}
+
+.footer-nav {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.footer-column {
+  float: left;
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 1034px) {
+  .footer-nav {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-nav > ul {
+        padding-left: 0;
+    }
+    .footer-nav > ul > li {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.button-with-style {
+  border: none;
+  background-color: #6c659e;
+  color: white;
+  font-size: 18px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.button-with-style:hover {
+  background-color: #524D79;
+  color: #AAA;
+}
+
+#gallery {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0px;
+    width: calc(100% + 25px);
+    float: left;
+    clear: both;
+}
+
+#gallery > li {
+    width: calc(33.333% - 25px);
+    display: block;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 680px) {
+    #gallery > li {
+        width: calc(50% - 25px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #gallery > li {
+        width: 100%;
+    }
+}
+
+
+#gallery > li > img {
+    display: block;
+    width: 100%;
+    transition: all 1s linear;
+    opacity: 0.85;
+}
+
+#gallery > li:hover > img {
+    opacity: 1.0;
+}
+
+.request-form-column {
+  display: inline-block;
+  float: right;
+}
+
+.request-form, .request-form input[type=text], .request-form textarea {
+  border: 2px solid #d3d3d3;
+  padding: 0 5px;
+}
+
+.request-form {
+  padding: 30px;
+}
+
+.form-label {
+  margin-bottom: 10px;
+}
+
+.form-input, .form-textarea {
+  margin-bottom: 15px;
+  height: 35px;
+  width: 100%;
+}
+
+.form-textarea {
+  height: 100px;
+}
