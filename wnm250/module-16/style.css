@@ -40,20 +40,20 @@ h3 {
 }
 
 h1,h2,h3 {
-  color: #295635;
+  color: #6a62ab;
+  font-family: oswald, sans-serif;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  background-image: url("images/notebook_@2X.png");
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .header-wrapper {
   height: 135px;
   width: 100%;
-  background-image: url("images/tile_header.jpg"); 
+  background-image: url("images/tile_header_violet.png"); 
 }
 
 header {
@@ -86,7 +86,6 @@ header > #links {
     font-size: 0.7em;
     right: -10px;
     bottom: 10px;
-    background-color: rgba(255,255,255, 0.5);
 }
 
 header > #links > a {
@@ -266,7 +265,7 @@ footer li {
 
 .button-with-style {
   border: none;
-  background-color: #6c659e;
+  background-color: #6a62ab;
   color: white;
   font-size: 18px;
   padding: 5px 15px;
