@@ -53,7 +53,7 @@ body {
 .header-wrapper {
   height: 135px;
   width: 100%;
-  background-image: url("images/tile_header_violet.png"); 
+  background-color: #6a62ab; 
 }
 
 header {
@@ -209,12 +209,12 @@ footer {
     margin: -105px auto 0 auto;
     overflow: auto;
     text-decoration: none;
-    background-color: #d1cee2;
+    background-color: rgba(106, 98, 171, 0.4);
     font-size: 14px;
 }
 
 footer, footer a {
-  color: #483f62;
+  color: #6a62ab;
 }
 
 footer h3 {
