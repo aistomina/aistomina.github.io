@@ -33,6 +33,7 @@ h1 {
 
 h2 {
   font-size: 18px;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -186,12 +187,12 @@ div.sub-section {
 
 .left-img {
     float: left;
-    margin-right: 30px;
+    margin: 0 25px 15px 0;
 }
 
 .right-img {
     float: right;
-    margin-left: 30px;
+    margin: 0 0 15px 25px;
 }
 
 @media only screen and (max-width: 575px) {
