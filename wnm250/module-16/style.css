@@ -381,3 +381,55 @@ footer li {
   width: 100%;
   height: 300px;
 }
+
+.index.flexslider {
+  border: none;
+  margin-bottom: 15px;
+}
+
+.index.slides {
+  height: 550px;
+  overflow: hidden;
+  background-color: white;
+  animation: fade-in-background 3s forwards;
+}
+
+@keyframes fade-in-background {
+  from {
+     background-color: white;
+  }
+  to {
+     background-color: black;
+  }
+}
+
+.index.slides > li {
+  height: 550px;
+}
+
+.index.slides > li > div {
+  height: 550px;
+  background-position: 50% 15%;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.index.slide-text {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0px;
+  z-index: 100;
+  opacity: 0;
+  animation: fade-in-slide-text 2s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fade-in-slide-text {
+  from {
+     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
