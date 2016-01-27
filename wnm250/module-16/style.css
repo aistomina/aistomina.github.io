@@ -81,6 +81,12 @@ header > #logo {
 header > #logo img {
   height: 90px;
 }
+@media only screen and (max-width: 420px) {
+  header > #logo img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 header > #links {
     font-weight: 200;
@@ -107,7 +113,7 @@ header > #links > a:hover {
     color: #9a99bf;
 }
 
-@media only screen and (max-width: 1034px) {
+@media only screen and (max-width: 1075px) {
   header {
     padding: 0 10px;
   }
@@ -116,7 +122,7 @@ header > #links > a:hover {
   }
 }
 
-@media only screen and (max-width: 958px) {
+@media only screen and (max-width: 1015px) {
     .header-wrapper {
       height: 175px;
     }
@@ -175,7 +181,14 @@ div.sub-section {
     padding-left: 10px;
   }
 }
-
+p.intro-blurb {
+  padding: 0 150px;
+}
+@media only screen and (max-width: 750px) {
+  p.intro-blurb {
+    padding: 0 30px;
+  }
+}
 .wrapper {
     min-height: 100%;
     padding-bottom: 30px;
@@ -261,6 +274,7 @@ footer li {
   .footer-column {
     width: 100%;
     text-align: center;
+    height: auto;
   }
 }
 
@@ -303,6 +317,10 @@ footer li {
 }
 
 @media only screen and (max-width: 480px) {
+  #gallery {
+      width: 100%;
+  }
+
     #gallery > li {
         width: 100%;
     }
@@ -431,5 +449,18 @@ footer li {
   }
   to {
     opacity: 1;
+  }
+}
+.index.slide-text > p {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-family: oswald, sans-serif;
+}
+
+@media only screen and (max-width: 518px) {
+  .index.slide-text > p {
+    font-size: 45px;
+    padding: 0 15px;
   }
 }
