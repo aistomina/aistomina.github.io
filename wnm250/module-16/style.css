@@ -95,22 +95,53 @@ header > #links {
     bottom: 10px;
 }
 
-header > #links > a {
+header > #links > .menu-item {
     transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     padding: 10px;
     margin-left: 5px;
     display: inline-block;
     height: 50px;
-    color: white;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-
 }
 
-header > #links > a:hover {
+header > #links > .menu-item a {
+    color: white;
+}
+
+header > #links > .menu-item:hover a {
     color: #9a99bf;
+}
+
+header > #links > .menu-item > .dropdown {
+  position: absolute;
+  display: none;
+  background-color: white;
+  border: 1px solid #6a62ab;
+  width: 450px;
+  z-index: 1;
+}
+
+header > #links > .menu-item:hover > .dropdown {
+  display: block;
+}
+
+.dropdown > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: black;
+}
+
+.dropdown > ul > li {
+  padding: 10px;
+}
+
+.dropdown > ul > li:hover {
+  background-color: #6a62ab;
 }
 
 @media only screen and (max-width: 1075px) {
@@ -141,7 +172,7 @@ header > #links > a:hover {
         right: auto;
         text-align: center;
     }
-    header > #links > a {
+    header > #links > .menu-item {
         margin-left: 0;
     }
 }
@@ -153,7 +184,7 @@ header > #links > a:hover {
     header {
       height: auto;
     }
-    header > #links > a {
+    header > #links > .menu-item {
       display: block;
       text-align: center;
     }
