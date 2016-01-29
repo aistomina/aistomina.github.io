@@ -119,9 +119,8 @@ header > #links > .menu-item > .dropdown {
   position: absolute;
   display: none;
   background-color: white;
-  border: 1px solid #6a62ab;
-  width: 450px;
   z-index: 1;
+  font-size: 18px;
 }
 
 header > #links > .menu-item:hover > .dropdown {
