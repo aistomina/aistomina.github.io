@@ -40,9 +40,9 @@
                         <a href="about.html">About</a>
                         <div class="dropdown">
                           <ul>
-                            <li><a href="schedule.html">Daily Schedule</a></li>
-                            <li><a href="meals.html">Meals and Snacks</a></li>
-                            <li><a href="tuition.html">Tuition and Fees</a></li>
+                            <li><a class="menu-item-link" href="schedule.html">Daily Schedule</a></li>
+                            <li><a class="menu-item-link" href="meals.html">Meals and Snacks</a></li>
+                            <li><a class="menu-item-link" href="tuition.html">Tuition and Fees</a></li>
                           </ul>
                         </div>
                       </div>
@@ -55,25 +55,25 @@
             <div class="section">
               <h1>CONTACT</h1>
               <div class="sub-section">
-                <div style="position: relative">
+                <div style="position: relative; display: flex; justify-content: space-between">
                   <div class="contact-img"></div>
-                  <form action="MAILTO:istomina.anna@gmail.com" method="post" enctype="text/plain">
-                    <div class="request-form-column">
-                      <div class="request-form">
-                        <div class="form-label">NAME</div>
-                        <input class="form-input" type="text" name="name" placeholder="your name here...">
-                        <div class="form-label">PHONE</div>
-                        <input class="form-input" type="text" name="phone" placeholder="your phone number here...">
-                        <div class="form-label">EMAIL</div>
-                        <input class="form-input" type="text" name="email" placeholder="your email address here...">
-                        <div class="form-label">MESSAGE</div>
-                        <textarea class="form-textarea" name="comment" placeholder="what would you like to learn?"></textarea>
-                        <div style="text-align: right">
-                          <input class="button-with-style" type="submit" value="REQUEST A TOUR">
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+                  <div class="request-form-column">
+                    <p>
+                      <a href="contact.html">P: (650) 518 7777</a>
+                    </p>
+                    <p>
+                      <a href="contact.html">F: (650) 518 7779</a>
+                    </p>
+                    <p>
+                      <a href="contact.html">E: ContactUs@TinyEinstein.org</a>
+                    </p>
+                    <p>
+                      <a href="contact.html">827 Independence Ave,<br>Mountain View, CA 94043</a>
+                    </p>
+                    <a class="button-with-style contact-button-with-style" href="http://goo.gl/forms/cwf9Unz39i">
+                      Request A Tour
+                    </a>
+                  </div>
                 </div>
               </div>
               <h1>VISIT</h1>
@@ -134,5 +134,15 @@
               </div>
             </div>
         </footer>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-40509343-2', 'auto');
+          ga('send', 'pageview');
+
+        </script>
     </body>
 </html>
