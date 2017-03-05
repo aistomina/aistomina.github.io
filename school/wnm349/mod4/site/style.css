@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/aileron-semibold-webfont.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Aileron';
+  font-style: normal;
+  font-weight: 200;
+  src: url("fonts/aileron-light-webfont.woff2") format('woff2');
+}
+
+.under-construction {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    font-size: 60px;
+    background-color: red;
+    text-align: center;
+    transform: rotateZ(-15deg);
+    z-index: 10000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h2 {
+  color: orange;
+  margin-top: 0;
+}
+
+p {
+  line-height: 40px;
+}
+
+body {
+    font-family: Aileron, sans-serif;
+    font-size: 24px;
+    background-color: #ffffff;
+    font-weight: 200;
+    padding-top: 0;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    height: 120px;
+    padding-top: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+header > * {
+    text-align: center;
+    position: absolute;
+}
+
+header > #logo {
+    font-weight: 400;
+    left: 0px;
+}
+
+header > #links {
+    font-size: 18px;
+    right: 0px;
+    padding-top: 2px;
+}
+
+header > #links > a {
+    transition: all 0.05s linear;
+    margin-left: 25px;
+    border-bottom: 0px solid #ddd;
+    display: inline-block;
+    height: 64px;
+}
+
+header > #links > a:hover {
+    transition: all 0.05s linear;
+    border-bottom: 5px solid #000;
+}
+
+.page-content {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#tiles {
+    list-style: none;
+    padding: 0;
+    margin: 0 -20px;
+    overflow: auto;
+}
+
+#tiles > li {
+    width: 33.33333%;
+    float: left;
+    padding: 20px;
+}
+
+#tiles > li > a > img {
+    width: 100%;
+    transition: all 0.1s linear;
+}
+
+#tiles > li > a:hover > img {
+    transform: rotate(1deg);
+    transition: all 0.1s linear;
+    -webkit-transform: scale(1.013, 1.013);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.quote-block {
+  border-bottom: 1px solid #a9adac;
+  padding: 30px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.quote-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quote-header-text {
+  margin: 0 200px;
+  font-size: 18px;
+}
+
+.quote-line {
+  border-top: 1px solid #a9adac;
+  flex: 1;
+}
+
+.quote-text {
+  font-style: italic;
+  margin-top: 40px;
+}
+
+.quote-author {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.mega-quote {
+  font-size: 72px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+footer {
+  background-color: #3e576d;
+  color: white;
+  padding: 20px 20px 10px 20px;
+  margin-top: 30px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.contact-field-label {
+  margin-top: 30px;
+}
+
+.contact-name-table {
+  border-collapse: collapse;
+}
+
+.contact-name-table td {
+  padding-right: 15px;
+}
