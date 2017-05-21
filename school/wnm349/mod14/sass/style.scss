@@ -27,14 +27,6 @@ $susy: (
   gutters: 1/4
 );
 
-// source: https://css-tricks.com/snippets/sass/centering-mixin/
-@mixin centerer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 * {
     box-sizing: border-box;
 }
@@ -153,6 +145,34 @@ header > #links > a:hover {
     border-bottom: 5px solid $standardBorderColor;
 }
 
+@media only screen and (max-width: 840px) {
+  header {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header > * {
+      position: relative;
+  }
+
+  header > #logo {
+    left: auto;
+  }
+
+  header > #links {
+    right: auto;
+  }
+
+  header > #links > a {
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 0;
+    font-size: 18px;
+  }
+}
+
 .separator {
   border-bottom: 1px solid $separatorColor;
 }
@@ -177,19 +197,24 @@ header > #links > a:hover {
 
 .welcome-banner {
   flex: 1;
-  position: relative;
-  height: 500px;
-}
-
-.welcome-banner > .text-container {
-  @include centerer;
   text-align: right;
-  width: 100%;
 }
 
 .welcome-text {
   font-size: 36px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 930px) {
+  .banner-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-banner {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .col1 {
@@ -247,6 +272,17 @@ input[type="text"] {
 
 .footer-content > div.copyright {
   font-size: 16px;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content > div {
+    margin-bottom: 20px;
+  }
 }
 
 .contact-form {
