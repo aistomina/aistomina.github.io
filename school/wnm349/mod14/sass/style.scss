@@ -225,6 +225,16 @@ header > #links > a:hover {
   @include span(5 at 8);
 }
 
+@media only screen and (max-width: 900px) {
+  .col1 {
+    @include span(12);
+  }
+
+  .col2 {
+    @include span(12);
+  }
+}
+
 .tea-card {
   text-align: center;
   border: 1px solid $standardBorderColor;
@@ -319,4 +329,19 @@ input[type="text"] {
 .contact-description {
   @include span(6 at 7);
   padding: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-form {
+    @include span(12);
+  }
+
+  .contact-form > button {
+    @include span(10);
+    margin-left: span(1);
+  }
+
+  .contact-description {
+    display: none;
+  }
 }

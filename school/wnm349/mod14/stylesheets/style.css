@@ -319,7 +319,24 @@ header > #links > a:hover {
   margin-right: 0;
 }
 
-/* line 228, ../sass/style.scss */
+@media only screen and (max-width: 900px) {
+  /* line 229, ../sass/style.scss */
+  .col1 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 233, ../sass/style.scss */
+  .col2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 238, ../sass/style.scss */
 .tea-card {
   text-align: center;
   border: 1px solid #EEE;
@@ -327,17 +344,17 @@ header > #links > a:hover {
   margin-bottom: 80px;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .tea-card > div {
   margin-bottom: 20px;
 }
 
-/* line 239, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .tea-card > img {
   width: 53%;
 }
 
-/* line 243, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 footer {
   background-color: #c1292d;
   color: white;
@@ -347,12 +364,12 @@ footer {
   padding-left: 10%;
 }
 
-/* line 252, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 .footer-content > div > a {
   color: white;
 }
 
-/* line 256, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .footer-content {
   display: flex;
   flex-direction: row;
@@ -360,37 +377,37 @@ footer {
   margin-bottom: 20px;
 }
 
-/* line 263, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .footer-content > div {
   font-size: 18px;
   margin: 0px 30px;
 }
 
-/* line 268, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 input[type="text"] {
   padding: 10px;
   margin-top: 20px;
 }
 
-/* line 273, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .footer-content > div.copyright {
   font-size: 16px;
 }
 
 @media only screen and (max-width: 500px) {
-  /* line 278, ../sass/style.scss */
+  /* line 288, ../sass/style.scss */
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* line 283, ../sass/style.scss */
+  /* line 293, ../sass/style.scss */
   .footer-content > div {
     margin-bottom: 20px;
   }
 }
-/* line 288, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .contact-form {
   width: 49.15254%;
   float: left;
@@ -399,7 +416,7 @@ input[type="text"] {
   padding-bottom: 30px;
 }
 
-/* line 294, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .contact-field-label {
   width: 83.05085%;
   float: left;
@@ -408,7 +425,7 @@ input[type="text"] {
   margin-top: 30px;
 }
 
-/* line 300, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .contact-field {
   width: 83.05085%;
   float: left;
@@ -419,13 +436,13 @@ input[type="text"] {
   height: 50px;
 }
 
-/* line 308, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .contact-field.message {
   height: 200px;
   margin-top: 30px;
 }
 
-/* line 313, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .contact-form > button {
   width: 32.20339%;
   float: left;
@@ -434,10 +451,33 @@ input[type="text"] {
   margin-left: 57.62712%;
 }
 
-/* line 319, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 .contact-description {
   width: 49.15254%;
   float: right;
   margin-right: 0;
   padding: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 335, ../sass/style.scss */
+  .contact-form {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 339, ../sass/style.scss */
+  .contact-form > button {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 6.77966%;
+  }
+
+  /* line 344, ../sass/style.scss */
+  .contact-description {
+    display: none;
+  }
 }
