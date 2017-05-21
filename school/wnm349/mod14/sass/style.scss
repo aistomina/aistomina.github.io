@@ -98,6 +98,15 @@ button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+.tea-card > button {
+  border: 1px solid $standardBorderColor;
+  padding: 5px 30px;
+  background-color: white;
+  cursor: pointer;
+  transition: box-shadow 0.2s linear;
+  color: $defaultColor;
+}
+
 header {
     position: relative;
     height: 190px;
@@ -153,8 +162,13 @@ header > #links > a:hover {
   position: relative;
 }
 
+.banner-row {
+  display: flex;
+  align-items: center;
+}
+
 .main-page-banner-image {
-  @include span(6);
+  flex: 2;
 }
 
 .main-page-banner-image > img {
@@ -162,7 +176,7 @@ header > #links > a:hover {
 }
 
 .welcome-banner {
-  @include span(6 at 7);
+  flex: 1;
   position: relative;
   height: 500px;
 }
