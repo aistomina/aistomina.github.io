@@ -81,7 +81,7 @@ div.paragraph {
 
 img.large-centered {
   @include span(6);
-  margin-left: span(3);
+  margin-left: span(3.3);
 }
 
 button {
@@ -100,13 +100,26 @@ button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.tea-card > button {
+.tea-card > a, .welcome-banner > a {
+  display: inline-block;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
   border: 1px solid $standardBorderColor;
   padding: 5px 30px;
   background-color: white;
   cursor: pointer;
   transition: box-shadow 0.2s linear;
   color: $defaultColor;
+}
+
+.tea-card > a:hover, .welcome-banner > a:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-banner > a {
+  background-color: #c1292d;
+  color: white;
 }
 
 header {
@@ -202,7 +215,7 @@ header > #links > a:hover {
 }
 
 .main-page-banner-image > img {
-  width: 100%;
+  width: 80%;
 }
 
 .welcome-banner {
@@ -213,6 +226,7 @@ header > #links > a:hover {
 .welcome-text {
   font-size: 36px;
   margin-bottom: 20px;
+  line-height: 120%;
 }
 
 @media only screen and (max-width: 930px) {
@@ -221,14 +235,28 @@ header > #links > a:hover {
     flex-direction: column;
   }
 
+  .main-page-banner-image > img {
+    width: 100%;
+  }
+
   .welcome-banner {
     text-align: center;
     margin-bottom: 50px;
   }
+
+  p {
+    @include span(10);
+    margin-left: span(1);
+    margin-bottom: 70px;
+    line-height: 40px;
+    font-size: 25px;
+  }
 }
 
 .col1 {
-  @include span(5);
+  /* if I use span(5) here the layout jumps around when resizing */
+  float: left;
+  width: 39%;
 }
 
 .col2 {
@@ -359,6 +387,7 @@ input[type="text"] {
 .caffein-level {
   display: flex;
   flex-direction: row;
+  margin-bottom: 40px;
 }
 
 .caffein-level > div {
@@ -374,5 +403,9 @@ input[type="text"] {
 }
 
 .brand-image > img {
+  width: 100%;
+}
+
+.tea-detail-image > img {
   width: 100%;
 }
