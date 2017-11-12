@@ -3,19 +3,6 @@
 ---
 @charset "utf-8";
 
-.under-construction {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 75px;
-  font-size: 60px;
-  background-color: red;
-  text-align: center;
-  transform: rotateZ(-15deg);
-  z-index: 10000;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -28,18 +15,36 @@ a {
 body {
   font-family: Quicksand, sans-serif;
   font-size: 24px;
-  background-color: #eee;
+  background-color: #ffffff;
   font-weight: 300;
   padding-top: 0;
-  padding-right: 10%;
-  padding-left: 10%;
   margin: 0;
 }
 
 header {
-  position: relative;
-  height: 70px;
-  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+}
+
+@keyframes fadeInHeaderShadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.19);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+    }
+}
+
+.header-with-shadow {
+    animation-name: fadeInHeaderShadow;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 header > * {
@@ -48,45 +53,136 @@ header > * {
 }
 
 header > #logo {
-  font-weight: 400;
   left: 60px;
+  height: 100%;
+}
+
+header > #logo > img {
+  display: block;
+  height: 100%;
 }
 
 header > #links {
   right: 60px;
+  bottom: 0;
 }
 
 header > #links > a {
+  font-weight: 600;
   transition: all 0.05s linear;
   margin-left: 25px;
-  border-bottom: 0px solid #ddd;
+  border-bottom: 0px solid;
+  border-color: #000;
   display: inline-block;
   height: 64px;
 }
 
 header > #links > a:hover {
   transition: all 0.05s linear;
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid;
 }
 
-#portfolio {
-  list-style: none;
-  padding: 0;
+@keyframes highlightScrollHint {
+  0% {
+    color: #000000;
+  }
+  5% {
+    color: #ffffff;
+  }
+  10% {
+    color: #000000;
+  }
+  15% {
+    color: #ffffff;
+  }
+  20% {
+    color: #000000;
+  }
+  100% {
+    color: #000000;
+  }
 }
 
-#portfolio > li {
-  width: 25%;
-  float: left;
+.scroll-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  font-weight: bold;
+  font-size: 36px;
+
+  animation-name: highlightScrollHint;
+  animation-duration: 4s;
+  animation-iteration-count: 10;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-#portfolio > li > a > img {
-  width: 100%;
-  transition: all 0.1s linear;
+footer {
+  height: 200px;
+  position: relative;
+  background-color: rgb(24, 26, 55);
+  color: #fff;
 }
 
-#portfolio > li > a:hover > img {
-  transform: rotate(1deg);
-  transition: all 0.1s linear;
-  -webkit-transform: scale(1.02, 1.02);
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+footer > * {
+  position: absolute;
+}
+
+footer > #footer-logo {
+  display: block;
+  right: 60px;
+  bottom: 0;
+  height: 90%;
+}
+
+footer > #links {
+  left: 60px;
+  top: 0;
+}
+
+footer > #links > a {
+  font-weight: 600;
+  transition: all 0.05s linear;
+  margin-left: 25px;
+  padding-top: 25px;
+  border-top: 0px solid;
+  border-color: #fff;
+  color: #fff;
+  display: inline-block;
+}
+
+footer > #links > a:hover {
+  transition: all 0.05s linear;
+  border-top: 5px solid;
+  padding-top: 20px;
+}
+
+
+.demo-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.demo-left-cell {
+  flex: 1;
+}
+
+.demo-right-cell {
+  flex: 1;
+}
+
+.demo-title-cell {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.demo-name {
+  color: #f4803e;
+  font-weight: bold;
+}
+
+.demo-rags {
+  background-color: rgba(244, 128, 62, 0.09);
 }
