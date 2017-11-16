@@ -1,0 +1,119 @@
+---
+# Styles for project pages.
+---
+
+@keyframes fade-in-cascade-keyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@mixin fade-in-cascade($delay) {
+  animation-name: fade-in-cascade-keyframes;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: $delay;
+}
+
+.project-text {
+  text-align: center;
+  padding: 0 30%;
+  margin-bottom: 80px;
+}
+
+.project-text > h1 {
+  @include fade-in-cascade(0.2s);
+  opacity: 0;
+}
+
+.project-text > p {
+  @include fade-in-cascade(0.3s);
+  opacity: 0;
+}
+
+img {
+  @include fade-in-cascade(0.4s);
+  opacity: 0;
+}
+
+.invision {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.invision img {
+  display: block;
+  max-width:1200px;
+  max-height:800px;
+  width: auto;
+  height: auto;
+}
+
+.herbal-site-image a:hover {
+  opacity: 0.8;
+}
+
+.herbal-column-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.herbal-column-layout .column3 {
+  width: 25%;
+}
+
+.herbal-column-layout .column2 {
+  width: 40%;
+}
+
+.image-example img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ui-accordion {
+  margin: 0 auto;
+  width: 60%;
+  background-color: rgba(244, 128, 62, 0.09);
+  border-radius: 20px;
+}
+
+.ui-accordion > * {
+  padding-left: 20px;
+}
+
+.ui-accordion > h3 {
+  margin: 0;
+}
+
+.ui-accordion > h3:nth-child(1) {
+  border-radius: 20px 20px 0 0;
+}
+
+.ui-accordion > h3.ui-accordion-header-collapsed:last-of-type {
+  border-radius: 0 0 20px 20px;
+}
+
+.ui-accordion-header {
+  cursor: pointer;
+  color: white;
+  background-color: #181a37;
+  padding: 20px;
+}
+
+.ui-accordion-header.ui-accordion-header-collapsed:before {
+  content: "▶";
+}
+
+.ui-accordion-header.ui-accordion-header-active:before {
+  content: "▼";
+}

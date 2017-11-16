@@ -39,4 +39,8 @@ $(function() {
       links.css('border-color', `rgba(255, 255, 255, 1.0)`);
     }
   });
+
+  $('.accordion').accordion({
+    heightStyle: "content"
+  });
 });

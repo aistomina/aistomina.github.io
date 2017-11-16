@@ -57,7 +57,12 @@ header > #logo {
   height: 100%;
 }
 
-header > #logo > img {
+header > #logo > a {
+  display: block;
+  height: 100%;
+}
+
+header > #logo > a > img {
   display: block;
   height: 100%;
 }
@@ -84,26 +89,26 @@ header > #links > a:hover {
 
 @keyframes highlightScrollHint {
   0% {
-    color: #000000;
+    stroke: #000000;
   }
   5% {
-    color: #ffffff;
+    stroke: #ffffff;
   }
   10% {
-    color: #000000;
+    stroke: #000000;
   }
   15% {
-    color: #ffffff;
+    stroke: #ffffff;
   }
   20% {
-    color: #000000;
+    stroke: #000000;
   }
   100% {
-    color: #000000;
+    stroke: #000000;
   }
 }
 
-.scroll-hint {
+.scroll-hint > svg {
   position: fixed;
   left: 50%;
   bottom: 20px;
@@ -176,13 +181,16 @@ footer > #links > a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(244, 128, 62, 0.09);
 }
 
-.demo-name {
+.demo-padded {
+  padding: 40px;
+}
+
+.demo-name, .demo-name > * {
   color: #f4803e;
   font-weight: bold;
-}
-
-.demo-rags {
-  background-color: rgba(244, 128, 62, 0.09);
+  text-align: center;
+  margin-bottom: 20px;
 }
