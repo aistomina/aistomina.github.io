@@ -117,3 +117,14 @@ img {
 .ui-accordion-header.ui-accordion-header-active:before {
   content: "▼";
 }
+
+.rags-comp-analysis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rags-comp-analysis * {
+  flex: 1;
+  text-align: center;
+}
