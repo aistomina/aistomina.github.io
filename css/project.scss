@@ -80,6 +80,17 @@ img {
   margin: 0 auto;
 }
 
+.video-example {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.video-example video {
+  width: 100%;
+  max-width: 1600px;
+}
+
 .ui-accordion {
   margin: 0 auto;
   width: 60%;
