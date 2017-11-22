@@ -59,18 +59,18 @@ img {
   opacity: 0.8;
 }
 
-.herbal-column-layout {
+.column-layout {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 40px;
 }
 
-.herbal-column-layout .column3 {
+.column-layout .column3 {
   width: 25%;
 }
 
-.herbal-column-layout .column2 {
+.column-layout .column2 {
   width: 40%;
 }
 
@@ -138,5 +138,18 @@ img {
 
 .rags-comp-analysis * {
   flex: 1;
+  text-align: center;
+}
+
+.text-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.text-grid > div {
+  padding: 40px;
+}
+
+.text-grid h2 {
   text-align: center;
 }
