@@ -2,6 +2,10 @@
 # Styles for project pages.
 ---
 
+footer {
+  margin-top: 100px;
+}
+
 @keyframes fade-in-cascade-keyframes {
   0% {
     opacity: 0;
@@ -20,10 +24,31 @@
   animation-delay: $delay;
 }
 
+h1.page-header {
+  font-size: 32px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 80px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
 .project-text {
   text-align: center;
-  padding: 0 30%;
-  margin-bottom: 80px;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .project-text > h1 {
@@ -34,6 +59,8 @@
 .project-text > p {
   @include fade-in-cascade(0.3s);
   opacity: 0;
+  text-align: left;
+  line-height: 1.5;
 }
 
 img {
@@ -76,7 +103,7 @@ img {
 
 .image-example img {
   display: block;
-  width: 80%;
+  width: 65%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -103,6 +130,10 @@ img {
   padding-left: 20px;
 }
 
+.ui-accordion > div {
+  padding: 20px;
+}
+
 .ui-accordion > h3 {
   margin: 0;
 }
@@ -115,10 +146,15 @@ img {
   border-radius: 0 0 20px 20px;
 }
 
+.ui-accordion b {
+  color: #333332;
+  font-weight: 500;
+}
+
 .ui-accordion-header {
   cursor: pointer;
   color: white;
-  background-color: #181a37;
+  background-color: #333332;
   padding: 20px;
 }
 

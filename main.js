@@ -5,7 +5,7 @@ $(function() {
   var offsetBeforeHeaderFx = 50;
   var offsetAfterHeaderFx = 350;
   var maxHeaderHeight = 200;
-  var headerColor = '24, 26, 55';
+  var headerColor = '51,51,50';
 
   $(window).scroll(function() {
     var top = $(window).scrollTop();
