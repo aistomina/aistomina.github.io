@@ -27,7 +27,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 0;
   font-size: 24px;
 }
 
@@ -70,6 +70,13 @@ header > #logo > a > img {
   margin-top: 25%;
 }
 
+.anna-istomina {
+  font-weight: 400;
+  height: 64px;
+  left: 60px;
+  bottom: 0;
+}
+
 header > #links {
   right: 60px;
   bottom: 0;
@@ -92,22 +99,22 @@ header > #links > a:hover {
 
 @keyframes highlightScrollHint {
   0% {
-    stroke: #000000;
+    stroke: #878785;
   }
   5% {
     stroke: #ffffff;
   }
   10% {
-    stroke: #000000;
+    stroke: #878785;
   }
   15% {
     stroke: #ffffff;
   }
   20% {
-    stroke: #000000;
+    stroke: #878785;
   }
   100% {
-    stroke: #000000;
+    stroke: #878785;
   }
 }
 
@@ -131,19 +138,42 @@ footer {
   font-size: 24px;
 }
 
-footer > * {
-  position: absolute;
+footer.home {
+  height: auto;
+  font-size: 22px;
+  font-weight: 200;
 }
 
 footer > #footer-logo {
+  position: absolute;
   display: block;
   right: 60px;
   bottom: 0;
   height: 90%;
 }
 
+footer.home > #footer-logo {
+  height: auto;
+}
+
+footer.home h1 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+footer.home h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.hi-text {
+  width: 600px;
+  padding: 80px 0 80px 120px;
+}
+
 footer > #links {
-  left: 60px;
+  position: absolute;
+  left: 35px;
   top: 0;
 }
 
@@ -183,7 +213,7 @@ footer > #links > a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #333332;
+  background-color: #fff4e3;
 }
 
 .demo-padded {
