@@ -2,6 +2,8 @@
 # Styles for project pages.
 ---
 
+@import 'common';
+
 footer {
   margin-top: 100px;
 }
@@ -61,6 +63,13 @@ h3 {
   opacity: 0;
   text-align: left;
   line-height: 1.5;
+}
+
+@media screen and (max-width: ($smallScreen + $mediumScreen) / 2) {
+  .project-text {
+    width: 100%;
+    padding: 0 30px;
+  }
 }
 
 img {

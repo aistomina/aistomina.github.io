@@ -3,8 +3,7 @@
 ---
 @charset "utf-8";
 
-$mediumScreen: 1100px;
-$smallScreen: 700px;
+@import 'common';
 
 * {
   box-sizing: border-box;
