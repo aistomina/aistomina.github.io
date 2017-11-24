@@ -4,6 +4,22 @@
 
 @import 'common';
 
+body {
+  padding-top: 150px;
+}
+
+@media screen and (max-width: $mediumScreen * 1.5) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: $mediumScreen) {
+  body {
+    padding-top: 50px;
+  }
+}
+
 footer {
   margin-top: 100px;
 }
@@ -58,7 +74,8 @@ h3 {
   opacity: 0;
 }
 
-.project-text > p {
+.project-text > p,
+.project-text > ul {
   @include fade-in-cascade(0.3s);
   opacity: 0;
   text-align: left;
@@ -98,16 +115,33 @@ img {
 .column-layout {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0 40px;
+  justify-content: space;
+  padding: 0;
 }
 
-.column-layout .column3 {
-  width: 25%;
+.column-layout > .column3 {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.column-layout .column2 {
-  width: 40%;
+.column-layout > .column3 > img {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media screen and (max-width: $mediumScreen) {
+  .column-layout > .column3 {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .column-layout {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .image-example img {
@@ -117,10 +151,28 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (max-width: ($smallScreen + $mediumScreen) / 2) {
+  .project-text {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .image-example img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .image-example img {
+    width: 100%;
+  }
+}
+
 .video-example {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-height: 700px;
 }
 
 .video-example video {
@@ -130,7 +182,8 @@ img {
 
 .ui-accordion {
   margin: 0 auto;
-  width: 60%;
+  max-width: 1200px;
+  width: calc(100% - 40px);
   background-color: #fff4e3;
   border-radius: 20px;
 }
@@ -175,15 +228,33 @@ img {
   content: "▼";
 }
 
-.rags-comp-analysis {
+.rags-comp-analysis-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: calc(100% - 40px);
 }
 
-.rags-comp-analysis * {
-  flex: 1;
+.rags-comp-analysis {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: stretch;
+}
+
+.rags-comp-analysis > div {
   text-align: center;
+}
+
+.rags-comp-analysis img {
+  max-width: 90%;
+}
+
+@media screen and (max-width: $mediumScreen) {
+  .rags-comp-analysis {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .text-grid {
