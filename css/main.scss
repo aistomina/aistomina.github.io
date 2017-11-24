@@ -3,6 +3,9 @@
 ---
 @charset "utf-8";
 
+$mediumScreen: 1100px;
+$smallScreen: 700px;
+
 * {
   box-sizing: border-box;
 }
@@ -23,6 +26,7 @@ body {
 }
 
 header {
+  backface-visibility: visible;
   position: fixed;
   top: 0;
   left: 0;
@@ -72,7 +76,7 @@ header > #logo > a > img {
 
 .anna-istomina {
   font-weight: 400;
-  height: 64px;
+  height: 71px;
   left: 60px;
   bottom: 0;
 }
@@ -89,7 +93,7 @@ header > #links > a {
   border-bottom: 0px solid;
   border-color: #000;
   display: inline-block;
-  height: 64px;
+  height: 71px;
 }
 
 header > #links > a:hover {
@@ -171,6 +175,35 @@ footer.home h2 {
   padding: 80px 0 80px 120px;
 }
 
+@media screen and (max-width: $smallScreen) {
+  body {
+    padding-top: 100px;
+  }
+
+  #links > a#secondary-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: ($smallScreen + $mediumScreen) / 2) {
+  .hi-text {
+    width: 100%;
+    padding: 60px 30px;
+  }
+
+  footer.home > #footer-logo {
+    position: relative;
+    right: 0;
+    bottom: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
 footer > #links {
   position: absolute;
   left: 35px;
@@ -194,17 +227,26 @@ footer > #links > a:hover {
   padding-top: 20px;
 }
 
-
 .demo-section {
   display: flex;
   flex-direction: row;
 }
 
-.demo-left-cell {
-  flex: 1;
+.demo-section-reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.demo-right-cell {
+@media screen and (max-width: $mediumScreen) {
+  .demo-section,.demo-section-reverse {
+    flex-direction: column;
+  }
+  .demo-cell {
+    min-height: 400px;
+  }
+}
+
+.demo-cell {
   flex: 1;
 }
 

@@ -1,4 +1,7 @@
 $(function() {
+  var mediumScreen = '1100px';
+  var smallScreen = '700px';
+
   var header = $('header');
   var links = $('header > #links > a');
   var scrollHint = $('.scroll-hint');
@@ -14,6 +17,11 @@ $(function() {
     var offsetBeforeHeaderFx = 50;
     var offsetAfterHeaderFx = offsetBeforeHeaderFx * 7;
 
+    var isSmallScreen = false;
+    if (window.matchMedia(`(max-width: ${smallScreen})`).matches) {
+      isSmallScreen = true;
+		}
+
     if (top > 0) {
       header.addClass('header-with-shadow');
       scrollHint.fadeOut();
@@ -26,39 +34,52 @@ $(function() {
       var opacity = (top - offsetBeforeHeaderFx) / (offsetAfterHeaderFx - offsetBeforeHeaderFx);
     }
 
-    if (top < offsetBeforeHeaderFx) {
-      header.css('height', `${maxHeaderHeight}px`);
-      header.css('background-color', '');
-      annaIstominaLink.css('color', '');
-
-      links.css('color', '');
-      links.css('border-color', '');
-      logo.css('opacity', `0`);
-      annaIstomina.css('margin-left', `0`);
-    } else if (top >= offsetBeforeHeaderFx && top < offsetAfterHeaderFx) {
-      var opacity = (top - offsetBeforeHeaderFx) / (offsetAfterHeaderFx - offsetBeforeHeaderFx);
-      var colorStrength = (255 * opacity) | 0;
-      header.css('background-color', `rgba(${headerColor}, ${opacity})`);
-      header.css('height', `${opacity * minHeaderHeight + (1.0 - opacity) * maxHeaderHeight}px`);
-
-      logo.css('opacity', `${opacity}`);
-      logo.css('left', `${opacity * 40}px`);
-      annaIstomina.css('margin-left', `${opacity * 40}px`);
-      annaIstominaLink.css('color', `rgb(${colorStrength}, ${colorStrength}, ${colorStrength})`);
-
-      links.css('color', `rgb(${colorStrength}, ${colorStrength}, ${colorStrength})`);
-      links.css('border-color', `rgb(${colorStrength}, ${colorStrength}, ${colorStrength})`);
-    } else {
+    if (isSmallScreen || top >= offsetAfterHeaderFx) {
+      // Small screen or scrolled to the middle of screen: use final attributes.
       header.css('background-color', `rgba(${headerColor}, 1.0)`);
       header.css('height', `${minHeaderHeight}px`);
+      links.css('color', `#ffffff`);
+      links.css('border-color', `#ffffff`);
+      annaIstominaLink.css('color', `#ffffff`);
+    } else {
+      if (top < offsetBeforeHeaderFx) {
+        // Top of the page: use translucent header style.
+        header.css('height', `${maxHeaderHeight}px`);
+        header.css('background-color', '');
+        links.css('color', '');
+        links.css('border-color', '');
+        annaIstominaLink.css('color', ``);
+      } else {
+        var tween = (top - offsetBeforeHeaderFx) / (offsetAfterHeaderFx - offsetBeforeHeaderFx);
+        var colorStrength = (255 * tween) | 0;
+        header.css('height', `${tween * minHeaderHeight + (1.0 - tween) * maxHeaderHeight}px`);
+        header.css('background-color', `rgba(${headerColor}, ${tween})`);
+        links.css('color', `rgb(${colorStrength}, ${colorStrength}, ${colorStrength})`);
+        links.css('border-color', `rgb(${colorStrength}, ${colorStrength}, ${colorStrength})`);
+        annaIstominaLink.css('color', `rgb(${colorStrength}, ${colorStrength}, ${colorStrength})`);
+      }
+    }
 
+    if (top < offsetBeforeHeaderFx) {
+      logo.css('opacity', `0`);
+      annaIstomina.css('opacity', '1.0');
+      annaIstomina.css('margin-left', `0`);
+    } else if (top >= offsetBeforeHeaderFx && top < offsetAfterHeaderFx) {
+      var tween = (top - offsetBeforeHeaderFx) / (offsetAfterHeaderFx - offsetBeforeHeaderFx);
+      logo.css('opacity', `${tween}`);
+      logo.css('left', `${tween * 40}px`);
+      if (isSmallScreen) {
+        annaIstomina.css('opacity', `${1.0 - tween}`);
+      }
+      annaIstomina.css('margin-left', `${tween * 40}px`);
+    } else {
       logo.css('opacity', `1.0`);
       logo.css('left', `40px`);
-      annaIstomina.css('margin-left', `40px`);
-      annaIstominaLink.css('color', `rgba(255, 255, 255, 1.0)`);
 
-      links.css('color', `rgba(255, 255, 255, 1.0)`);
-      links.css('border-color', `rgba(255, 255, 255, 1.0)`);
+      if (isSmallScreen) {
+        annaIstomina.css('opacity', '0');
+      }
+      annaIstomina.css('margin-left', `40px`);
     }
   }
 
@@ -74,5 +95,5 @@ $(function() {
 });
 
 function scrollToContact() {
-  $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+  $("html, body").animate({ scrollTop: $(document).height() - $('footer').height() - $('header').height() }, 1000);
 }
