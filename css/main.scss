@@ -123,7 +123,7 @@ header > #links > a:hover {
 
 .scroll-hint > svg {
   position: fixed;
-  left: 50%;
+  left: calc(50% - 40px);
   bottom: 20px;
 
   animation-name: highlightScrollHint;
@@ -238,10 +238,11 @@ footer > #links > a:hover {
 
 @media screen and (max-width: $mediumScreen) {
   .demo-section,.demo-section-reverse {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .demo-title-cell {
-    min-height: 400px;
+    min-height: 200px;
+    padding: 20px;
   }
 }
 
