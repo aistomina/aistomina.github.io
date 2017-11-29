@@ -38,6 +38,20 @@ body {
   animation-delay: $delay;
 }
 
+#links > a.project-link {
+  display: inline-block;
+}
+
+#links > a.home-link {
+  display: none;
+}
+
+@media screen and (max-width: $smallScreen) {
+  #links > a.secondary {
+    display: none;
+  }
+}
+
 h1.page-header {
   font-size: 32px;
 }

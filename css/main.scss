@@ -174,12 +174,20 @@ footer.home h2 {
   padding: 80px 0 80px 120px;
 }
 
+#links > a.project-link {
+  display: none;
+}
+
+#links > a.home-link {
+  display: inline-block;
+}
+
 @media screen and (max-width: $smallScreen) {
   body {
     padding-top: 100px;
   }
 
-  #links > a#secondary-link {
+  #links > a.secondary {
     display: none;
   }
 }

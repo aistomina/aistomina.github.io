@@ -12,7 +12,7 @@ description: This is my design portofio.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://annaistomina.com" # the base hostname & protocol for your site
 exclude:
-  - "school"
+  # - "school"
   - ".git"
 
 # Build settings

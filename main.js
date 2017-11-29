@@ -70,6 +70,8 @@ $(function() {
       logo.css('left', `${tween * 40}px`);
       if (isSmallScreen) {
         annaIstomina.css('opacity', `${1.0 - tween}`);
+      } else {
+        annaIstomina.css('opacity', '1.0');
       }
       annaIstomina.css('margin-left', `${tween * 40}px`);
     } else {
@@ -78,6 +80,8 @@ $(function() {
 
       if (isSmallScreen) {
         annaIstomina.css('opacity', '0');
+      } else {
+        annaIstomina.css('opacity', '1.0');
       }
       annaIstomina.css('margin-left', `40px`);
     }
