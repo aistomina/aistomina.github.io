@@ -11,17 +11,28 @@
 
 a {
   text-decoration: none;
-  color: #000;
+  color: $primaryTextColor;
 }
 
 body {
   font-family: acumin-pro, sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: $secondaryTextColor;
+
   background-color: #ffffff;
   padding-top: 0;
   margin: 0;
+}
+
+h1, h2, h3, h4 {
+  color: $primaryTextColor;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 header {
@@ -273,7 +284,8 @@ footer > #links > a:hover {
 .demo-name, .demo-name > * {
   color: #f4803e;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 28px;
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 2px;
 }

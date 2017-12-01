@@ -53,12 +53,12 @@ body {
 }
 
 h1.page-header {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 h1 {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 26px;
   margin-top: 80px;
 }
 
@@ -97,6 +97,7 @@ h3 {
   opacity: 0;
   text-align: left;
   line-height: 1.5;
+  color: #6c6c6c;
 }
 
 @media screen and (max-width: ($smallScreen + $mediumScreen) / 2) {
@@ -249,7 +250,7 @@ img {
 }
 
 .ui-accordion b {
-  color: #333332;
+  color: $primaryTextColor;
   font-weight: 500;
 }
 
