@@ -312,12 +312,61 @@ img {
   max-width: 90%;
 }
 
+.fx-sketch-pair-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: calc(100% - 40px);
+}
+
+.fx-sketch-pair {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: stretch;
+}
+
+.fx-sketch-pair img {
+  max-width: 90%;
+}
+
+.fx-side-by-side-videos {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a.fx-case-study-link {
+  display: block;
+  border: 1px solid #323232;
+  border-radius: 5px;
+  padding: 20px 0;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1380px) {
+  .fx-side-by-side-videos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: $mediumScreen) {
   .rags-comp-analysis {
     grid-template-columns: 50% 50%;
   }
 
   .nasa-sketch-pair {
+    grid-template-columns: 100%;
+  }
+
+  .fx-sketch-pair {
     grid-template-columns: 100%;
   }
 }
