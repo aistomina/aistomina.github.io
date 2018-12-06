@@ -331,13 +331,6 @@ img {
   max-width: 90%;
 }
 
-.fx-side-by-side-videos {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 a.fx-case-study-link {
   display: block;
   border: 1px solid #323232;
@@ -348,13 +341,6 @@ a.fx-case-study-link {
   text-decoration: none;
   cursor: pointer;
   margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1380px) {
-  .fx-side-by-side-videos {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 @media screen and (max-width: $mediumScreen) {
